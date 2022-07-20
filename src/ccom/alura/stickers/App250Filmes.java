@@ -14,6 +14,8 @@ public class App250Filmes {
 //	https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html
 //	https://imdb-api.com/en/API/Top250TVs/k_i5x35d3q
 //		String key = "k_i5x35d3q";
+//		https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX128_CR0,3,128,176_AL_.jpg
+
 		
 		// Conexap HTTP:
 		String url = "https://imdb-api.com/en/API/Top250Movies/k_i5x35d3q";
