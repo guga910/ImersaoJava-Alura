@@ -1,0 +1,42 @@
+//		https://github.com/alura-cursos/imersao-java/blob/aula2/alura-stickers/src/GeradoraDeFigurinhas.java
+
+//		String url = "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX128_CR0,3,128,176_AL_.jpg\r\n";
+//		InputStream ipsUrl = new URL(url).openStream();
+//		classe que presenta uma fonte de bytes com isso, posso receber e transformar no tipo de arquivo desejado
+
+//		File arquivo = new File("entrada/sda.jpg");
+
+//		InputStream ips2= new FileInputStream(new File("entrada/sda.jpg"));
+
+para deixar ele translucido, porem o docigo nao funcionou:
+//	    BufferedImage novaImagem = new BufferedImage(largura, novaAltura, BufferedImage.TRANSLUCENT);
+
+
+// para escrever uma imagem nova em cima da imagem antiga, usei o metodo drawImage
+Graphics2D grafics = (Graphics2D) novaImagem.getGraphics();
+		grafics.drawImage(imagemOriginal, 0, 0, null); 
+		
+		Teste na classe gerador de ficgurinhas:
+		public static void main(String[] args) throws Exception {
+		
+		String texto= "Minha segunda FIG";
+		String url = "https://imersao-java-apis.s3.amazonaws.com/TopMovies_1.jpg";
+		
+		InputStream ipsUrl = new URL(url).openStream();
+		new GeradorDeFigurinhas().criar(ipsUrl, texto);
+		
+		System.out.println("ve ai se foi...");
+		
+	}
+
+	
+	key da nasa:
+	b1nbVlzdHSFznyCBiLvgdNgAN6BjsRORWWbHiFq8
+	
+	
+	https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY
+
+Neo - Pesquisa
+	
+	ex: 
+	https://api.nasa.gov/planetary/apod? api_key=b1nbVlzdHSFznyCBiLvgdNgAN6BjsRORWWbHiFq8
