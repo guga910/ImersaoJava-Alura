@@ -13,7 +13,7 @@ public class GeradorDeFigurinhas {
 
 	// leitura da imagem
 
-	public void criar(InputStream inputStream, String nomeArquivo) throws Exception {
+	public void criar(InputStream inputStream, String nomeArquivo, String textoFigurinha) throws Exception {
 
 		BufferedImage imagemOriginal = ImageIO.read(inputStream);
 
@@ -33,7 +33,7 @@ public class GeradorDeFigurinhas {
 		grafics.setColor(Color.YELLOW);
 		grafics.setFont(fonte);
 
-		String textoFigurinha = "Agora foi!";
+//		String textoFigurinha = "Agora foi!";
 		int centrado = 0;
 
 		// escrever uma frase na nova imagem
@@ -44,4 +44,5 @@ public class GeradorDeFigurinhas {
 
 	}
 
+	
 }
