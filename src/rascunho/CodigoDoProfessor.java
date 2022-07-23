@@ -22,7 +22,6 @@ import ccom.alura.stickers.JsonParser;
 public class CodigoDoProfessor {
 	public void cria(InputStream inputStream, String nomeArquivo) throws Exception {
 		
-		ve se esse codigo subio!
 		// leitura da imagem
 		// InputStream inputStream =
 		// new FileInputStream(new File("entrada/filme-maior.jpg"));

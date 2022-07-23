@@ -12,36 +12,25 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 
 public class ClienteHttp {
-	
-	
-	public String conexao(String url)  {
-		URI endereco= create(url);
+
+	public String conexao(String url) {
+		URI endereco = create(url);
 		HttpClient client = newHttpClient();
-		HttpRequest solicitar= newBuilder(endereco).GET().build();
+		HttpRequest solicitar = newBuilder(endereco).GET().build();
 		HttpResponse<String> resposta;
 		try {
 			resposta = client.send(solicitar, BodyHandlers.ofString());
-		String body= resposta.body();
-		System.out.println(resposta.statusCode());
-		System.out.println(body);
-		return body;
-		
+			String body = resposta.body();
+//		System.out.println(resposta.statusCode());
+//		System.out.println(body);
+			return body;
+
 		} catch (IOException | InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			e.getCause();
+			throw new RuntimeException(e);
+//			e.printStackTrace();
+//			e.getCause();
 		}
-		return null;
-		
-		
+//		return null;
 	}
-	
-	
-//
-//
-//	// Extrair dados JSON :
-//	JsonParser parse = new JsonParser();
-//
-//	List<Map<String, String>> listaDeConteudo = parse.parse(body);
 
 }
