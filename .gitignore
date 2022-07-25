@@ -1,6 +1,4 @@
-gitignore
-ImersaoJava-Alura\src\CodigoDoProfessor.java
-ImersaoJava-Alura\src\MaiorBilheteria
-ImersaoJava-Alura\src\observacoes
-ImersaoJava-Alura\src\rascunho
+
+rascunho/
 alura-stickers/saida/*.png
+
